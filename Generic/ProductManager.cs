@@ -46,9 +46,13 @@ namespace Generic
             {
                 var vendorAlgorithm = algorithmFactory.GetVendorRuleAlrogithm(product.VendorId);
 
-                var discount = vendorAlgorithm.GetDiscountForProduct(product);
+                var discount = 0.0M;
+                if (vendorAlgorithm != null)
+                {
+                    discount = vendorAlgorithm.GetDiscountForProduct(product);
+                }
 
-                product.Rate = product.Rate - (product.Rate * discount / 100); 
+                product.Rate = product.Rate - (product.Rate * discount / 100);
             }
 
             return productRates;

@@ -54,12 +54,13 @@
   </Choose>
   <ItemGroup>
     <Compile Include="IProductsDataAccess.cs" />
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTest2.cs" />
     <Compile Include="VendorRuleAlgorithmFactory.cs" />
     <Compile Include="IVendorRuleAlgorithm.cs" />
     <Compile Include="IVendorRuleAlgorithmFactory.cs" />
     <Compile Include="ProductManager.cs" />
     <Compile Include="ProductRate.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
